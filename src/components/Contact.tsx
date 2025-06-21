@@ -41,8 +41,8 @@ const Contact = () => {
               <span className="gradient-text">Get In Touch</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Let's work together on your next project. I'm always open to
-              discussing new opportunities.
+              Let&apos;s work together on your next project. I&apos;m always
+              open to discussing new opportunities.
             </p>
           </div>
 

@@ -78,18 +78,18 @@ const About = () => {
                   Who I Am
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  I'm an experienced IT Support professional with over 13 years
-                  of experience in network installation, troubleshooting, and
-                  hardware/software maintenance. I specialize in POS systems,
-                  network management, and IT infrastructure solutions with
-                  proven ability to work both independently and collaboratively
-                  within a team.
+                  I&apos;m an experienced IT Support professional with over 13
+                  years of experience in network installation, troubleshooting,
+                  and hardware/software maintenance. I specialize in POS
+                  systems, network management, and IT infrastructure solutions
+                  with proven ability to work both independently and
+                  collaboratively within a team.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
-                  I hold a Bachelor's Degree in Informatics Engineering from
-                  Universitas Indraprasta PGRI and am highly adaptable to new
-                  technologies and challenges in the IT and information systems
-                  sector.
+                  I hold a Bachelor&apos;s Degree in Informatics Engineering
+                  from Universitas Indraprasta PGRI and am highly adaptable to
+                  new technologies and challenges in the IT and information
+                  systems sector.
                 </p>
               </div>
 
