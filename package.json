@@ -2,6 +2,18 @@
   "name": "personal-landing-page",
   "version": "0.1.0",
   "private": true,
+  "description": "A modern, responsive personal portfolio website built with Next.js 14, TypeScript, and Tailwind CSS",
+  "keywords": [
+    "portfolio",
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "react",
+    "personal-website",
+    "developer-portfolio"
+  ],
+  "author": "Ahmad Bushairi",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
