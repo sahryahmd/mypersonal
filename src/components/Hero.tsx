@@ -33,7 +33,7 @@ const Hero = () => {
           }`}
         >
           {/* Profile Image */}
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center mt-14">
             <Image
               src="/profile.jpg"
               alt="Profile Picture"
