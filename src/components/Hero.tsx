@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -33,16 +34,18 @@ const Hero = () => {
         >
           {/* Profile Image */}
           <div className="flex justify-center mb-6">
-            <img
+            <Image
               src="/profile.jpg"
               alt="Profile Picture"
+              width={160}
+              height={160}
               className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg border-4 border-gray-800 bg-gray-700"
               style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.4)" }}
             />
           </div>
           {/* Greeting */}
           <p className="text-lg md:text-xl text-gray-300 mb-4 animate-fade-in">
-            Hello, I'm
+            Hello, I&apos;m
           </p>
 
           {/* Name */}
