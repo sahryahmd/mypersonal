@@ -62,8 +62,9 @@ const Hero = () => {
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed animate-fade-in">
             An experienced IT Support professional with expertise in network
             installation, troubleshooting, and hardware/software maintenance.
-            Specialized in POS systems, network management, and IT
-            infrastructure solutions.
+            Specialized in POS systems, network management,IT infrastructure
+            solutions, frontend developer, UI/UX Designer Slicing any design to
+            code.
           </p>
 
           {/* CTA Buttons */}

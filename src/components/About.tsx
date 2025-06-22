@@ -85,11 +85,20 @@ const About = () => {
                   with proven ability to work both independently and
                   collaboratively within a team.
                 </p>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed mb-6">
                   I hold a Bachelor&apos;s Degree in Informatics Engineering
                   from Universitas Indraprasta PGRI and am highly adaptable to
                   new technologies and challenges in the IT and information
                   systems sector.
+                </p>
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  In addition to technical support I&apos;m also passionate a
+                  frontend developer. Skilled in creating responsive and
+                  user-centric web interfaces using Next.js, I specialize in
+                  transforming UI/UX designs into clean and functional code. My
+                  ability to blend visual design with practical implementation
+                  makes me a versatile asset in both infrastructure and frontend
+                  development teams.
                 </p>
               </div>
 
@@ -108,7 +117,23 @@ const About = () => {
                     <span className="text-gray-300">Hardware Maintenance</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 bg-pink-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                    <span className="text-gray-300">Frontend Development</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-3 h-3 bg-fuchsia-500 rounded-full"></div>
+                    <span className="text-gray-300">
+                      Figma & Adobe Illustrator
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <span className="text-gray-300">
+                      Slicing Design to Code{" "}
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-3 h-3 bg-lime-500 rounded-full"></div>
                     <span className="text-gray-300">POS Systems</span>
                   </div>
                   <div className="flex items-center space-x-3">

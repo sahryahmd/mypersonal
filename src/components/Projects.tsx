@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Image from "next/image"
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -29,117 +30,13 @@ const Projects = () => {
   }, [])
 
   const projects = [
-    {
-      id: 1,
-      title: "POS Raptor System Installation",
-      description:
-        "Successfully installed and configured POS Raptor systems with Epson thermal printers for cashier operations, including QBilliard and Kitchen POS Raptor applications.",
-      image: "/api/placeholder/400/250",
-      category: "systems",
-      technologies: [
-        "POS Raptor",
-        "Epson Printers",
-        "QBilliard",
-        "Kitchen POS",
-        "System Configuration",
-      ],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: true,
-    },
-    {
-      id: 2,
-      title: "Thamrin Nine Network Infrastructure",
-      description:
-        "Designed and installed comprehensive internet and VOIP-based telephone networks for multiple tenants at Thamrin Nine Complex, ensuring reliable connectivity and service quality.",
-      image: "/api/placeholder/400/250",
-      category: "networking",
-      technologies: [
-        "VOIP",
-        "Network Installation",
-        "Cacti",
-        "The Dude",
-        "Service Activation",
-      ],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: true,
-    },
-    {
-      id: 3,
-      title: "QUBICA AMF Bowling System",
-      description:
-        "Maintained and ensured operational readiness of QUBICA AMF Conqueror bowling cashier system, providing technical support and system optimization.",
-      image: "/api/placeholder/400/250",
-      category: "systems",
-      technologies: [
-        "QUBICA AMF",
-        "Cashier Systems",
-        "System Maintenance",
-        "Technical Support",
-      ],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: true,
-    },
-    {
-      id: 4,
-      title: "Fingerprint Attendance System",
-      description:
-        "Installed and configured fingerprint attendance systems with comprehensive user training and ongoing maintenance support.",
-      image: "/api/placeholder/400/250",
-      category: "hardware",
-      technologies: [
-        "Fingerprint Systems",
-        "User Training",
-        "System Installation",
-        "Maintenance",
-      ],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false,
-    },
-    {
-      id: 5,
-      title: "Interactive Whiteboard Setup",
-      description:
-        "Installed Promethean interactive whiteboards with detailed usage demonstrations and technical support for educational institutions.",
-      image: "/api/placeholder/400/250",
-      category: "hardware",
-      technologies: [
-        "Promethean",
-        "Interactive Whiteboards",
-        "Educational Technology",
-        "User Training",
-      ],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false,
-    },
-    {
-      id: 6,
-      title: "Network Monitoring & Troubleshooting",
-      description:
-        "Implemented comprehensive network monitoring using Cacti and The Dude, with rapid response troubleshooting for service interruptions.",
-      image: "/api/placeholder/400/250",
-      category: "networking",
-      technologies: [
-        "Cacti",
-        "The Dude",
-        "Network Monitoring",
-        "Troubleshooting",
-        "Service Support",
-      ],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: true,
-    },
+    // Frontend projects dulu
     {
       id: 7,
       title: "Spin City Bowling Website",
       description:
         "A modern, responsive company profile website for Spin City Bowling, built with Next.js and Tailwind CSS. Features booking information, gallery, and contact form.",
-      image: "/api/placeholder/400/250",
+      image: "/spin.png",
       category: "frontend",
       technologies: ["Next.js", "Tailwind CSS", "React", "Vercel"],
       liveUrl: "https://www.spincityagora.my.id",
@@ -151,7 +48,7 @@ const Projects = () => {
       title: "Personal Portfolio Website",
       description:
         "A personal portfolio website to showcase my skills, experience, and projects as a frontend developer. Built with Next.js and styled using Tailwind CSS.",
-      image: "/api/placeholder/400/250",
+      image: "/personal.png",
       category: "frontend",
       technologies: ["Next.js", "Tailwind CSS", "React"],
       liveUrl: "#",
@@ -169,6 +66,112 @@ const Projects = () => {
       liveUrl: "#",
       githubUrl: "#",
       featured: false,
+    },
+    // Sisanya project lain
+    {
+      id: 1,
+      title: "POS Raptor System Installation",
+      description:
+        "Successfully installed and configured POS Raptor systems with Epson thermal printers for cashier operations, including QBilliard and Kitchen POS Raptor applications.",
+      image: "/pos.jpg",
+      category: "systems",
+      technologies: [
+        "POS Raptor",
+        "Epson Printers",
+        "QBilliard",
+        "Kitchen POS",
+        "System Configuration",
+      ],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true,
+    },
+    {
+      id: 2,
+      title: "Thamrin Nine Network Infrastructure",
+      description:
+        "Designed and installed comprehensive internet and VOIP-based telephone networks for multiple tenants at Thamrin Nine Complex, ensuring reliable connectivity and service quality.",
+      image: "/thamrinnine.jpg",
+      category: "networking",
+      technologies: [
+        "VOIP",
+        "Network Installation",
+        "Cacti",
+        "The Dude",
+        "Service Activation",
+      ],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true,
+    },
+    {
+      id: 3,
+      title: "QUBICA AMF Bowling System",
+      description:
+        "Maintained and ensured operational readiness of QUBICA AMF Conqueror bowling cashier system, providing technical support and system optimization.",
+      image: "/amf.jpg",
+      category: "systems",
+      technologies: [
+        "QUBICA AMF",
+        "Cashier Systems",
+        "System Maintenance",
+        "Technical Support",
+      ],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true,
+    },
+    {
+      id: 4,
+      title: "Fingerprint Attendance System",
+      description:
+        "Installed and configured fingerprint attendance systems with comprehensive user training and ongoing maintenance support.",
+      image: "/att.webp",
+      category: "hardware",
+      technologies: [
+        "Fingerprint Systems",
+        "User Training",
+        "System Installation",
+        "Maintenance",
+      ],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false,
+    },
+    {
+      id: 5,
+      title: "Interactive Whiteboard Setup",
+      description:
+        "Installed Promethean interactive whiteboards with detailed usage demonstrations and technical support for educational institutions.",
+      image: "/promethean.png",
+      category: "hardware",
+      technologies: [
+        "Promethean",
+        "Interactive Whiteboards",
+        "Educational Technology",
+        "User Training",
+      ],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false,
+    },
+    {
+      id: 6,
+      title: "Network Monitoring & Troubleshooting",
+      description:
+        "Implemented comprehensive network monitoring using Cacti and The Dude, with rapid response troubleshooting for service interruptions.",
+      image: "/network.jpg",
+      category: "networking",
+      technologies: [
+        "Cacti",
+        "The Dude",
+        "Network Monitoring",
+        "Troubleshooting",
+        "Service Support",
+      ],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true,
     },
   ]
 
@@ -232,6 +235,13 @@ const Projects = () => {
               >
                 {/* Project Image */}
                 <div className="relative h-48 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 overflow-hidden">
+                  {/* Render gambar project */}
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover w-full h-full"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/30 to-purple-600/30 flex items-center justify-center">
                     <div className="text-center">
                       <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
