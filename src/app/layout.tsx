@@ -14,7 +14,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Ahmad Bushairi - IT Support Professional",
+  title: "Ahmad Bushairi - IT & Frontend Developer",
   description:
     "Experienced IT Support professional with expertise in network installation, troubleshooting, and hardware/software maintenance. Specialized in POS systems, network management, and IT infrastructure.",
   keywords: [
@@ -26,6 +26,12 @@ export const metadata: Metadata = {
     "Software Troubleshooting",
     "Mikrotik",
     "Windows OS",
+    "Frontend Developer",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "TypeScript",
+    "JavaScript",
   ],
   authors: [{ name: "Ahmad Bushairi" }],
   // viewport: "width=device-width, initial-scale=1", // Hapus dari sini
