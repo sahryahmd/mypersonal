@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,8 +21,15 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="#home" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">AB</span>
+            <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-white">
+              <Image
+                src="/logo.jpg"
+                alt="Logo"
+                width={32}
+                height={32}
+                className="object-cover w-8 h-8"
+                priority
+              />
             </div>
             <span className="text-xl font-bold gradient-text">
               Ahmad Bushairi
