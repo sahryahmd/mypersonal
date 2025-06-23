@@ -36,7 +36,7 @@ const Hero = () => {
           <div className="flex justify-center mt-14">
             <Image
               src="/profile.jpg"
-              alt="Profile Picture"
+              alt="Ahmad Bushairi - Profile Picture"
               width={160}
               height={160}
               className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg border-4 border-gray-800 bg-gray-700"
@@ -60,11 +60,11 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed animate-fade-in">
-            An experienced IT Support professional with expertise in network
-            installation, troubleshooting, and hardware/software maintenance.
-            Specialized in POS systems, network management,IT infrastructure
-            solutions, frontend developer, UI/UX Designer Slicing any design to
-            code.
+            Ahmad Bushairi adalah seorang IT Support & Frontend Developer yang
+            berpengalaman dalam instalasi jaringan, troubleshooting, maintenance
+            hardware/software, POS systems, network management, solusi
+            infrastruktur IT, serta pengembangan website modern. Siap membantu
+            Anda mewujudkan solusi digital terbaik.
           </p>
 
           {/* CTA Buttons */}

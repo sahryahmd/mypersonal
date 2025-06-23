@@ -62,11 +62,12 @@ const About = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="gradient-text">About Me</span>
+              <span className="gradient-text">About Ahmad Bushairi</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Passionate developer with a love for creating exceptional digital
-              experiences
+              Ahmad Bushairi adalah seorang IT Support & Frontend Developer yang
+              passionate dengan dunia teknologi dan pengembangan digital
+              experiences.
             </p>
           </div>
 
@@ -75,15 +76,14 @@ const About = () => {
             <div className="space-y-6">
               <div className="glass p-8 rounded-2xl hover-lift">
                 <h3 className="text-2xl font-semibold mb-4 text-white">
-                  Who I Am
+                  Who is Ahmad Bushairi?
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  I&apos;m an experienced IT Support professional with over 13
-                  years of experience in network installation, troubleshooting,
-                  and hardware/software maintenance. I specialize in POS
-                  systems, network management, and IT infrastructure solutions
-                  with proven ability to work both independently and
-                  collaboratively within a team.
+                  Saya, Ahmad Bushairi, adalah seorang IT Support profesional
+                  dengan pengalaman lebih dari 13 tahun dalam instalasi
+                  jaringan, troubleshooting, dan maintenance hardware/software.
+                  Saya juga seorang Frontend Developer yang siap membantu Anda
+                  membangun website modern dan responsif.
                 </p>
                 <p className="text-gray-300 leading-relaxed mb-6">
                   I hold a Bachelor&apos;s Degree in Informatics Engineering

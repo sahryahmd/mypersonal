@@ -14,10 +14,10 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Experienced IT Support professional with expertise in network
-              installation, troubleshooting, and hardware/software maintenance.
-              Specialized in POS systems, network management, and IT
-              infrastructure solutions.
+              Ahmad Bushairi adalah seorang IT Support & Frontend Developer
+              berpengalaman dalam instalasi jaringan, troubleshooting,
+              maintenance hardware/software, POS systems, network management,
+              dan solusi infrastruktur IT.
             </p>
           </div>
 

@@ -14,10 +14,11 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Ahmad Bushairi - IT & Frontend Developer",
+  title: "Ahmad Bushairi - IT & Frontend Developer | Personal Website",
   description:
-    "Experienced IT Support professional with expertise in network installation, troubleshooting, and hardware/software maintenance. Specialized in POS systems, network management, and IT infrastructure.",
+    "Ahmad Bushairi adalah IT & Frontend Developer. Berpengalaman dalam instalasi jaringan, troubleshooting, maintenance hardware/software, POS systems, dan pengembangan website modern.",
   keywords: [
+    "Ahmad Bushairi",
     "IT Support",
     "Network Installation",
     "POS Systems",
@@ -32,6 +33,7 @@ export const metadata: Metadata = {
     "Tailwind CSS",
     "TypeScript",
     "JavaScript",
+    "Personal Website",
   ],
   authors: [{ name: "Ahmad Bushairi" }],
   // viewport: "width=device-width, initial-scale=1", // Hapus dari sini
