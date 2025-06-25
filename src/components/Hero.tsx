@@ -86,7 +86,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mt-12 animate-fade-in">
             <a
-              href="mailto:sahry10@gmail.com"
+              href="mailto:araysama10@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-200 hover-lift"

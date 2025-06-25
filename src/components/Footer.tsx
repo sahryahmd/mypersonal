@@ -51,7 +51,7 @@ const Footer = () => {
               {[
                 {
                   name: "Email",
-                  url: "mailto:sahry10@gmail.com",
+                  url: "mailto:araysama10@gmail.com",
                   icon: "M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
                 },
                 {
@@ -84,7 +84,7 @@ const Footer = () => {
               ))}
             </div>
             <div className="text-gray-400 text-sm">
-              <p>Email: sahry10@gmail.com</p>
+              <p>Email: araysama10@gmail.com</p>
               <p>Location: Depok City, West Java, Indonesia</p>
             </div>
           </div>
