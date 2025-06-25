@@ -65,9 +65,8 @@ const About = () => {
               <span className="gradient-text">About Ahmad Bushairi</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Ahmad Bushairi adalah seorang IT Support & Frontend Developer yang
-              passionate dengan dunia teknologi dan pengembangan digital
-              experiences.
+              Ahmad Bushairi is an IT Support & Frontend Developer passionate
+              about technology and digital experience development.
             </p>
           </div>
 
@@ -79,11 +78,11 @@ const About = () => {
                   Who is Ahmad Bushairi?
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  Saya, Ahmad Bushairi, adalah seorang IT Support profesional
-                  dengan pengalaman lebih dari 13 tahun dalam instalasi
-                  jaringan, troubleshooting, dan maintenance hardware/software.
-                  Saya juga seorang Frontend Developer yang siap membantu Anda
-                  membangun website modern dan responsif.
+                  I, Ahmad Bushairi, am a professional IT Support specialist
+                  with over 13 years of experience in network installation,
+                  troubleshooting, and hardware/software maintenance. I am also
+                  a Frontend Developer ready to help you build a modern and
+                  responsive website.
                 </p>
                 <p className="text-gray-300 leading-relaxed mb-6">
                   I hold a Bachelor&apos;s Degree in Informatics Engineering
@@ -92,7 +91,7 @@ const About = () => {
                   systems sector.
                 </p>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  In addition to technical support I&apos;m also passionate a
+                  In addition to technical support, I am also a passionate
                   frontend developer. Skilled in creating responsive and
                   user-centric web interfaces using Next.js, I specialize in
                   transforming UI/UX designs into clean and functional code. My

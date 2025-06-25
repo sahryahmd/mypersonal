@@ -60,11 +60,11 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed animate-fade-in">
-            Ahmad Bushairi adalah seorang IT Support & Frontend Developer yang
-            berpengalaman dalam instalasi jaringan, troubleshooting, maintenance
-            hardware/software, POS systems, network management, solusi
-            infrastruktur IT, serta pengembangan website modern. Siap membantu
-            Anda mewujudkan solusi digital terbaik.
+            Ahmad Bushairi is an IT Support & Frontend Developer experienced in
+            network installation, troubleshooting, hardware/software
+            maintenance, POS systems, network management, IT infrastructure
+            solutions, and modern website development. Ready to help you achieve
+            the best digital solutions.
           </p>
 
           {/* CTA Buttons */}
