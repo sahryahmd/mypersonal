@@ -1,3 +1,4 @@
+// app/components/Header.tsx
 "use client"
 
 import { useState } from "react"
@@ -10,7 +11,7 @@ const Header = () => {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
+    { name: "AI Caption", href: "#ai-caption" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ]
