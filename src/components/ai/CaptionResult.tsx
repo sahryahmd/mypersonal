@@ -44,7 +44,7 @@ export default function CaptionResult({ result }: Props) {
 
       <button
         onClick={handleCopy}
-        className="absolute top-4 right-4 flex items-center gap-2 text-sm text-[#503217] hover:text-[#3c2615]"
+        className="absolute top-4 right-4 flex items-center gap-2 text-sm text-gray-50 hover:text-[#3c2615]"
       >
         {copied ? (
           <>

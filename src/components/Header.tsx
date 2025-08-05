@@ -9,11 +9,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "AI Caption", href: "#ai-caption" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/#about" },
+    { name: "AI Caption", href: "/ai-caption" },
+    { name: "Projects", href: "/#projects" },
+    { name: "Contact", href: "/#contact" },
   ]
 
   return (
@@ -21,7 +21,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="#home" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-white">
               <Image
                 src="/logo.jpg"
