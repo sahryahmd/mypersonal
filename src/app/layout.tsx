@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Inter, Poppins } from "next/font/google"
 import "./globals.css"
+import WhatsappBubbleChat from "@/components/WhatsappBubbleChat"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -55,6 +56,7 @@ export default function RootLayout({
         className={`${inter.variable} ${poppins.variable} antialiased bg-gray-900 text-white`}
       >
         {children}
+        <WhatsappBubbleChat />
       </body>
     </html>
   )
