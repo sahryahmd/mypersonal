@@ -13,6 +13,7 @@ import {
   MessageSquare,
 } from "lucide-react"
 import type { Metadata } from "next"
+import Script from "next/script"
 
 export const metadata: Metadata = {
   title:
@@ -29,6 +30,26 @@ export const metadata: Metadata = {
     "Maintenance",
     "Troubleshooting",
   ],
+  alternates: {
+    canonical: "/services",
+  },
+  openGraph: {
+    title:
+      "Jasa & Paket Layanan - IT Support, Web Development, Remote Support | Ahmad Bushairi",
+    description:
+      "Paket layanan profesional: IT Support onsite/remote, Web Development modern, dan dukungan teknis cepat.",
+    url: "/services",
+    images: ["logo.png"],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Jasa & Paket Layanan - IT Support, Web Development, Remote Support | Ahmad Bushairi",
+    description:
+      "Paket layanan profesional: IT Support onsite/remote, Web Development modern, dan dukungan teknis cepat.",
+    images: ["/logo.png"],
+  },
 }
 
 export default function ServicesPage() {
@@ -89,9 +110,69 @@ export default function ServicesPage() {
     },
   ] as const
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+  const priceMap: Record<string, number> = {
+    "it-support": 500000,
+    "web-dev": 3500000,
+    "remote-support": 150000,
+  }
+
+  const servicesLd = {
+    "@context": "https://schema.org",
+    "@graph": cards.map((c) => ({
+      "@type": "Service",
+      name: c.title,
+      description: `${c.title} — ${c.features.join(", ")}.`,
+      provider: {
+        "@type": "Person",
+        name: "Ahmad Bushairi",
+      },
+      areaServed: "ID",
+      url: `${baseUrl}/services#${c.id}`,
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "IDR",
+        price: priceMap[c.id] ?? undefined,
+        url: `${baseUrl}/services#${c.id}`,
+        availability: "https://schema.org/InStock",
+      },
+    })),
+  }
+
+  const breadcrumbsLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Beranda",
+        item: `${baseUrl}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Layanan",
+        item: `${baseUrl}/services`,
+      },
+    ],
+  }
+
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <Header />
+
+      {/* Structured Data */}
+      <Script
+        id="breadcrumbs-ld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsLd) }}
+      />
+      <Script
+        id="services-ld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesLd) }}
+      />
 
       {/* Hero */}
       <section className="relative overflow-hidden py-24">
@@ -101,10 +182,14 @@ export default function ServicesPage() {
             <span className="gradient-text">Jasa & Paket Layanan</span>
           </h1>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-            Solusi profesional untuk kebutuhan IT Support, pembuatan website modern,
-            dan dukungan remote dengan respons cepat serta harga transparan.
+            Solusi profesional untuk kebutuhan IT Support, pembuatan website
+            modern, dan dukungan remote dengan respons cepat serta harga
+            transparan.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "120ms" }}>
+          <div
+            className="mt-8 flex flex-col sm:flex-row gap-4 justify-center animate-fade-in"
+            style={{ animationDelay: "120ms" }}
+          >
             <a
               href={wa("Halo, saya ingin konsultasi paket layanan.")}
               className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all"
@@ -128,10 +213,20 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {cards.map((card, index) => {
-              const { id, title, icon: Icon, price, accent, cta, features, note } = card
+              const {
+                id,
+                title,
+                icon: Icon,
+                price,
+                accent,
+                cta,
+                features,
+                note,
+              } = card
               return (
                 <div
                   key={id}
+                  id={id}
                   className="glass rounded-2xl overflow-hidden flex flex-col hover-lift animate-fade-in"
                   style={{ animationDelay: `${index * 120}ms` }}
                 >
@@ -176,23 +271,51 @@ export default function ServicesPage() {
 
           {/* Custom / Add-ons */}
           <div className="mt-12 grid lg:grid-cols-3 gap-6">
-            <div className="glass p-6 rounded-2xl animate-fade-in" style={{ animationDelay: "60ms" }}>
+            <div
+              className="glass p-6 rounded-2xl animate-fade-in"
+              style={{ animationDelay: "60ms" }}
+            >
               <h4 className="text-lg font-semibold mb-2">Add-on Populer</h4>
               <ul className="space-y-2 text-gray-300">
-                <li className="flex items-center gap-2"><MessageSquare className="w-4 h-4 text-indigo-400" /> Integrasi WhatsApp & Email</li>
-                <li className="flex items-center gap-2"><MessageSquare className="w-4 h-4 text-indigo-400" /> Domain & SSL (managed)</li>
-                <li className="flex items-center gap-2"><MessageSquare className="w-4 h-4 text-indigo-400" /> Training singkat penggunaan</li>
+                <li className="flex items-center gap-2">
+                  <MessageSquare className="w-4 h-4 text-indigo-400" />{" "}
+                  Integrasi WhatsApp & Email
+                </li>
+                <li className="flex items-center gap-2">
+                  <MessageSquare className="w-4 h-4 text-indigo-400" /> Domain &
+                  SSL (managed)
+                </li>
+                <li className="flex items-center gap-2">
+                  <MessageSquare className="w-4 h-4 text-indigo-400" /> Training
+                  singkat penggunaan
+                </li>
               </ul>
             </div>
-            <div className="glass p-6 rounded-2xl animate-fade-in" style={{ animationDelay: "120ms" }}>
+            <div
+              className="glass p-6 rounded-2xl animate-fade-in"
+              style={{ animationDelay: "120ms" }}
+            >
               <h4 className="text-lg font-semibold mb-2">Term & Catatan</h4>
-              <p className="text-gray-300">Harga dapat berubah sesuai kompleksitas. Penjadwalan berdasarkan ketersediaan. Invoice & tanda jadi untuk pekerjaan pengembangan.</p>
+              <p className="text-gray-300">
+                Harga dapat berubah sesuai kompleksitas. Penjadwalan berdasarkan
+                ketersediaan. Invoice & tanda jadi untuk pekerjaan pengembangan.
+              </p>
             </div>
-            <div className="glass p-6 rounded-2xl animate-fade-in" style={{ animationDelay: "180ms" }}>
-              <h4 className="text-lg font-semibold mb-2">Butuh Paket Kustom?</h4>
-              <p className="text-gray-300">Ceritakan kebutuhan Anda, saya bantu buatkan paket yang paling efisien dan sesuai anggaran.</p>
+            <div
+              className="glass p-6 rounded-2xl animate-fade-in"
+              style={{ animationDelay: "180ms" }}
+            >
+              <h4 className="text-lg font-semibold mb-2">
+                Butuh Paket Kustom?
+              </h4>
+              <p className="text-gray-300">
+                Ceritakan kebutuhan Anda, saya bantu buatkan paket yang paling
+                efisien dan sesuai anggaran.
+              </p>
               <a
-                href={wa("Halo, saya ingin paket kustom sesuai kebutuhan saya.")}
+                href={wa(
+                  "Halo, saya ingin paket kustom sesuai kebutuhan saya."
+                )}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-4 px-5 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg font-medium hover:from-indigo-700 hover:to-purple-700 transition-all"
@@ -211,25 +334,45 @@ export default function ServicesPage() {
             <span className="gradient-text">Kenapa Memilih Saya</span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="glass p-6 rounded-2xl text-center hover-lift animate-fade-in" style={{ animationDelay: "60ms" }}>
+            <div
+              className="glass p-6 rounded-2xl text-center hover-lift animate-fade-in"
+              style={{ animationDelay: "60ms" }}
+            >
               <ShieldCheck className="w-8 h-8 mx-auto text-indigo-400" />
               <h3 className="mt-3 font-semibold">Berpengalaman</h3>
-              <p className="text-gray-300 text-sm mt-1">13+ tahun menangani infrastruktur, sistem, dan web modern.</p>
+              <p className="text-gray-300 text-sm mt-1">
+                13+ tahun menangani infrastruktur, sistem, dan web modern.
+              </p>
             </div>
-            <div className="glass p-6 rounded-2xl text-center hover-lift animate-fade-in" style={{ animationDelay: "120ms" }}>
+            <div
+              className="glass p-6 rounded-2xl text-center hover-lift animate-fade-in"
+              style={{ animationDelay: "120ms" }}
+            >
               <Clock className="w-8 h-8 mx-auto text-indigo-400" />
               <h3 className="mt-3 font-semibold">Respons Cepat</h3>
-              <p className="text-gray-300 text-sm mt-1">Prioritas pada downtime minimal dan penyelesaian efektif.</p>
+              <p className="text-gray-300 text-sm mt-1">
+                Prioritas pada downtime minimal dan penyelesaian efektif.
+              </p>
             </div>
-            <div className="glass p-6 rounded-2xl text-center hover-lift animate-fade-in" style={{ animationDelay: "180ms" }}>
+            <div
+              className="glass p-6 rounded-2xl text-center hover-lift animate-fade-in"
+              style={{ animationDelay: "180ms" }}
+            >
               <Award className="w-8 h-8 mx-auto text-indigo-400" />
               <h3 className="mt-3 font-semibold">Kualitas Terjaga</h3>
-              <p className="text-gray-300 text-sm mt-1">Standar praktik terbaik dan dokumentasi ringkas.</p>
+              <p className="text-gray-300 text-sm mt-1">
+                Standar praktik terbaik dan dokumentasi ringkas.
+              </p>
             </div>
-            <div className="glass p-6 rounded-2xl text-center hover-lift animate-fade-in" style={{ animationDelay: "240ms" }}>
+            <div
+              className="glass p-6 rounded-2xl text-center hover-lift animate-fade-in"
+              style={{ animationDelay: "240ms" }}
+            >
               <Wallet className="w-8 h-8 mx-auto text-indigo-400" />
               <h3 className="mt-3 font-semibold">Harga Transparan</h3>
-              <p className="text-gray-300 text-sm mt-1">Biaya jelas sejak awal, opsi paket & add-on fleksibel.</p>
+              <p className="text-gray-300 text-sm mt-1">
+                Biaya jelas sejak awal, opsi paket & add-on fleksibel.
+              </p>
             </div>
           </div>
         </div>
