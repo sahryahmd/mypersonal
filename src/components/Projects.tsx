@@ -57,14 +57,14 @@ const Projects = () => {
     },
     {
       id: 9,
-      title: "Redesain Landing Page Perusahaan",
+      title: "Landing Page Medifit",
       description:
-        "Redesain landing page perusahaan untuk meningkatkan pengalaman pengguna dan responsivitas mobile. Menerapkan praktik terbaik UI/UX modern.",
-      image: "/personal.png",
+        "Medifit adalah landing page e-commerce kesehatan yang saya slicing dari Figma ke Next.js + TailwindCSS. Fokus pada performa, aksesibilitas, dan micro-interaction: hover CTA, grid kategori dengan ikon, highlight promo, serta testimonial interaktif. Hasil akhir 90% pixel-perfect, responsif, dan siap diintegrasikan ke fitur cart/checkout.",
+      image: "/medifit.png",
       category: "frontend",
-      technologies: ["React", "Tailwind CSS", "UI/UX"],
-      liveUrl: "#",
-      githubUrl: "#",
+      technologies: ["Next.js", "Tailwind CSS", "UI/UX"],
+      liveUrl: "https://medifit-git-master-sahryahmds-projects.vercel.app/",
+      githubUrl: "https://github.com/sahryahmd/medifit",
       featured: false,
     },
     // Sisanya project lain
