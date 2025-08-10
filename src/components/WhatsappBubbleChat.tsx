@@ -22,7 +22,7 @@ export default function WhatsappBubbleChat() {
       {/* Chat content */}
       {open && (
         <div className="mt-2 w-64 bg-white border border-gray-300 rounded-lg shadow-xl p-4 animate-fade-in-up">
-          <p className="text-gray-800 mb-2">Hai! Butuh bantuan? 👋</p>
+          <p className="text-gray-800 mb-2">Hai! Ingin konsultasi singkat? 👋</p>
           <a
             href="https://wa.me/6285693922994?text=Halo%20saya%20mau%20tanya%20tentang%20layanan%20Anda"
             target="_blank"
@@ -30,7 +30,7 @@ export default function WhatsappBubbleChat() {
             className="flex items-center justify-center bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md"
           >
             <FaWhatsapp className="mr-2" />
-            Chat via WhatsApp
+            Konsultasi via WhatsApp
           </a>
         </div>
       )}

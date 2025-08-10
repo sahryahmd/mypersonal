@@ -29,23 +29,33 @@ export default function AICaptionPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f0f23] via-[#1e1e2e] to-[#0f0f23] text-white">
+    <div className="min-h-screen text-white">
       <Header />
       <main className="max-w-3xl mx-auto px-4 py-16">
-        <section className="max-w-2xl mx-auto px-4 py-12">
-          <h1 className="text-3xl font-bold text-center text-[#503217] mb-6">
-            AI Caption Generator
-          </h1>
+        <section className="relative overflow-hidden rounded-2xl">
+          <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/40 via-purple-900/40 to-pink-900/40" />
+          <div className="relative max-w-2xl mx-auto px-6 py-12">
+            <h1 className="text-3xl font-bold text-center mb-6 animate-fade-in">
+              <span className="gradient-text">Generator Caption AI</span>
+            </h1>
 
-          <CaptionInput onGenerate={handleGenerate} />
+            <div className="animate-fade-in" style={{ animationDelay: "120ms" }}>
+              <CaptionInput onGenerate={handleGenerate} />
+            </div>
 
-          {loading && (
-            <p className="mt-6 text-center text-[#503217] font-medium">
-              Loading...
-            </p>
-          )}
+            {loading && (
+              <p className="mt-6 text-center text-gray-200 font-medium animate-fade-in" style={{ animationDelay: "180ms" }}>
+                Memuat...
+              </p>
+            )}
 
-          {!loading && result && <CaptionResult result={result} />}
+            {!loading && result && (
+              <div className="animate-fade-in" style={{ animationDelay: "240ms" }}>
+                <CaptionResult result={result} />
+              </div>
+            )}
+
+                      </div>
         </section>
       </main>
     </div>

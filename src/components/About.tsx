@@ -29,25 +29,25 @@ const About = () => {
 
   const experiences = [
     {
-      year: "April 2025 - Present",
-      title: "IT Support Specialist",
+      year: "April 2025 - Sekarang",
+      title: "Spesialis IT Support",
       company: "PT Gema Indah Pratama SpinCity Agora",
       description:
-        "Installed POS Raptor systems with Epson thermal printers, monitored cashier applications (QBilliard and Kitchen POS Raptor), maintained QUBICA AMF Conqueror bowling cashier system, managed wired and wireless networks, and repaired thermal and dot matrix printers.",
+        "Instalasi sistem POS Raptor dengan printer thermal Epson, monitoring aplikasi kasir (QBilliard dan Kitchen POS Raptor), pemeliharaan sistem kasir bowling QUBICA AMF Conqueror, manajemen jaringan kabel & nirkabel, serta perbaikan printer thermal dan dot matrix.",
     },
     {
       year: "April 2012 - April 2025",
-      title: "IT Staff",
+      title: "Staf IT",
       company: "PT Centra Sarana Data",
       description:
-        "Installed internet and VOIP-based telephone networks for tenants at Thamrin Nine Complex, activated and tested services post-installation, monitored daily network activity using Cacti and The Dude, and diagnosed and resolved service interruptions.",
+        "Instalasi jaringan internet dan telepon berbasis VOIP untuk tenant di Thamrin Nine Complex, aktivasi & pengujian layanan pasca-instalasi, monitoring aktivitas jaringan harian dengan Cacti dan The Dude, serta diagnosis dan penyelesaian gangguan layanan.",
     },
     {
-      year: "June 2011 - April 2012",
-      title: "IT Staff",
+      year: "Juni 2011 - April 2012",
+      title: "Staf IT",
       company: "PT Offistarindo Adhiprima",
       description:
-        "Installed fingerprint attendance systems and conducted user training, installed Promethean interactive whiteboards with usage demonstrations, and maintained fingerprint machines, language labs, and interactive whiteboards.",
+        "Instalasi mesin absensi fingerprint dan pelatihan pengguna, instalasi papan tulis interaktif Promethean beserta demonstrasi penggunaan, serta pemeliharaan mesin fingerprint, laboratorium bahasa, dan papan interaktif.",
     },
   ]
 
@@ -62,11 +62,12 @@ const About = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="gradient-text">About Ahmad Bushairi</span>
+              <span className="gradient-text">Tentang Ahmad Bushairi</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Ahmad Bushairi is an IT Support & Frontend Developer passionate
-              about technology and digital experience development.
+              Ahmad Bushairi adalah IT Support & Frontend Developer yang antusias
+              pada teknologi dan pengalaman digital. Saya membantu bisnis membangun
+              infrastruktur yang stabil dan website modern yang cepat serta mudah digunakan.
             </p>
           </div>
 
@@ -75,69 +76,60 @@ const About = () => {
             <div className="space-y-6">
               <div className="glass p-8 rounded-2xl hover-lift">
                 <h3 className="text-2xl font-semibold mb-4 text-white">
-                  Who is Ahmad Bushairi?
+                  Siapa Ahmad Bushairi?
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  I, Ahmad Bushairi, am a professional IT Support specialist
-                  with over 13 years of experience in network installation,
-                  troubleshooting, and hardware/software maintenance. I am also
-                  a Frontend Developer ready to help you build a modern and
-                  responsive website.
+                  Saya, Ahmad Bushairi, adalah profesional IT Support dengan pengalaman
+                  lebih dari 13 tahun dalam instalasi jaringan, troubleshooting, serta
+                  perawatan perangkat keras/perangkat lunak. Saya juga seorang Frontend
+                  Developer yang siap membantu membangun website modern dan responsif.
                 </p>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  I hold a Bachelor&apos;s Degree in Informatics Engineering
-                  from Universitas Indraprasta PGRI and am highly adaptable to
-                  new technologies and challenges in the IT and information
-                  systems sector.
+                  Lulusan S1 Teknik Informatika dari Universitas Indraprasta PGRI, saya
+                  terbiasa beradaptasi dengan teknologi baru dan tantangan di bidang IT
+                  serta sistem informasi.
                 </p>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  In addition to technical support, I am also a passionate
-                  frontend developer. Skilled in creating responsive and
-                  user-centric web interfaces using Next.js, I specialize in
-                  transforming UI/UX designs into clean and functional code. My
-                  ability to blend visual design with practical implementation
-                  makes me a versatile asset in both infrastructure and frontend
-                  development teams.
+                  Selain dukungan infrastruktur, saya berfokus pada antarmuka web yang
+                  ramah pengguna menggunakan Next.js. Saya terbiasa menerjemahkan desain
+                  UI/UX menjadi kode yang rapi dan fungsional—menggabungkan visual yang
+                  kuat dengan implementasi efektif agar tujuan bisnis Anda tercapai.
                 </p>
               </div>
 
               {/* Skills Preview */}
               <div className="glass p-8 rounded-2xl hover-lift">
                 <h3 className="text-2xl font-semibold mb-4 text-white">
-                  What I Do
+                  Apa yang Saya Kerjakan
                 </h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-indigo-500 rounded-full"></div>
-                    <span className="text-gray-300">Network Installation</span>
+                    <span className="text-gray-300">Instalasi Jaringan</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
-                    <span className="text-gray-300">Hardware Maintenance</span>
+                    <span className="text-gray-300">Perawatan Perangkat Keras</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                    <span className="text-gray-300">Frontend Development</span>
+                    <span className="text-gray-300">Pengembangan Frontend</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-fuchsia-500 rounded-full"></div>
-                    <span className="text-gray-300">
-                      Figma & Adobe Illustrator
-                    </span>
+                    <span className="text-gray-300">Figma & Adobe Illustrator</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                    <span className="text-gray-300">
-                      Slicing Design to Code{" "}
-                    </span>
+                    <span className="text-gray-300">Slicing Desain ke Kode</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-lime-500 rounded-full"></div>
-                    <span className="text-gray-300">POS Systems</span>
+                    <span className="text-gray-300">Sistem POS</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                    <span className="text-gray-300">IT Troubleshooting</span>
+                    <span className="text-gray-300">Pemecahan Masalah IT</span>
                   </div>
                 </div>
               </div>
@@ -146,7 +138,7 @@ const About = () => {
             {/* Right Column - Experience Timeline */}
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold mb-6 text-white">
-                Experience
+                Pengalaman
               </h3>
               <div className="space-y-6">
                 {experiences.map((exp, index) => (
@@ -178,15 +170,15 @@ const About = () => {
               <div className="grid grid-cols-3 gap-4 mt-8">
                 <div className="glass p-4 rounded-xl text-center hover-lift">
                   <div className="text-2xl font-bold gradient-text">13+</div>
-                  <div className="text-sm text-gray-400">Years Experience</div>
+                  <div className="text-sm text-gray-400">Tahun Pengalaman</div>
                 </div>
                 <div className="glass p-4 rounded-xl text-center hover-lift">
                   <div className="text-2xl font-bold gradient-text">100+</div>
-                  <div className="text-sm text-gray-400">Systems Installed</div>
+                  <div className="text-sm text-gray-400">Sistem Terpasang</div>
                 </div>
                 <div className="glass p-4 rounded-xl text-center hover-lift">
                   <div className="text-2xl font-bold gradient-text">50+</div>
-                  <div className="text-sm text-gray-400">Networks Managed</div>
+                  <div className="text-sm text-gray-400">Jaringan Dikelola</div>
                 </div>
               </div>
             </div>

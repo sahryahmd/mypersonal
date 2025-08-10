@@ -36,17 +36,15 @@ const Hero = () => {
           <div className="flex justify-center mt-14">
             <Image
               src="/profile.jpg"
-              alt="Ahmad Bushairi - Profile Picture"
+              alt="Foto Profil Ahmad Bushairi"
               width={160}
               height={160}
               className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg border-4 border-gray-800 bg-gray-700"
               style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.4)" }}
+              priority
             />
           </div>
           {/* Greeting */}
-          <p className="text-lg md:text-xl text-gray-300 mb-4 animate-fade-in">
-            Hello, I&apos;m
-          </p>
 
           {/* Name */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-slide-in-left">
@@ -55,16 +53,17 @@ const Hero = () => {
 
           {/* Title */}
           <h2 className="text-2xl md:text-3xl lg:text-4xl text-gray-300 mb-8 animate-slide-in-right">
-            IT Support Professional & Frontend Developer
+            Spesialis IT Support & Frontend Developer
           </h2>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed animate-fade-in">
-            Ahmad Bushairi is an IT Support & Frontend Developer experienced in
-            network installation, troubleshooting, hardware/software
-            maintenance, POS systems, network management, IT infrastructure
-            solutions, and modern website development. Ready to help you achieve
-            the best digital solutions.
+            Saya membantu bisnis dan individu memiliki sistem IT yang stabil
+            serta website modern yang cepat, aman, dan mudah dikelola. Tujuan
+            saya sederhana: operasional tanpa gangguan, pengalaman pengguna yang
+            mulus, dan proses kerja yang jelas dari awal hingga selesai. Mulai
+            dengan konsultasi gratis—tanpa komitmen—untuk mendapatkan solusi
+            paling efektif sesuai kebutuhan Anda.
           </p>
 
           {/* CTA Buttons */}
@@ -73,13 +72,13 @@ const Hero = () => {
               href="#projects"
               className="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 hover-lift shadow-lg"
             >
-              View My Work
+              Lihat Portofolio
             </Link>
             <Link
               href="#contact"
               className="px-8 py-4 border-2 border-gray-600 text-gray-300 font-semibold rounded-lg hover:border-indigo-500 hover:text-white transition-all duration-300 hover-lift"
             >
-              Get In Touch
+              Hubungi Saya
             </Link>
           </div>
 
@@ -111,7 +110,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-200 hover-lift"
-              title="Phone"
+              title="WhatsApp"
             >
               <svg
                 className="w-6 h-6"

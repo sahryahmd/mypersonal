@@ -17,10 +17,10 @@ export default function CaptionInput({ onGenerate }: Props) {
   return (
     <div className="space-y-4">
       <textarea
-        placeholder="Masukkan prompt caption..."
+        placeholder="Tulis ide atau konteks caption Anda..."
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#503217]"
+        className="w-full p-3 bg-gray-800 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
         rows={4}
       />
       <button

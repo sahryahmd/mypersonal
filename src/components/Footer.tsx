@@ -14,23 +14,23 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Ahmad Bushairi is an IT Support & Frontend Developer experienced
-              in network installation, troubleshooting, hardware/software
-              maintenance, POS systems, network management, and IT
-              infrastructure solutions.
+              IT Support & Frontend Developer dengan pengalaman 13+ tahun. Saya
+              membantu bisnis membangun infrastruktur yang stabil dan website
+              modern yang cepat, aman, serta ramah pengguna.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-white">Tautan Cepat</h3>
             <ul className="space-y-2">
               {[
-                { name: "Home", href: "#home" },
-                { name: "About", href: "#about" },
-                { name: "Skills", href: "#skills" },
-                { name: "Projects", href: "#projects" },
-                { name: "Contact", href: "#contact" },
+                { name: "Beranda", href: "/#home" },
+                { name: "Tentang", href: "/#about" },
+                { name: "Keahlian", href: "/#skills" },
+                { name: "Proyek", href: "/#projects" },
+                { name: "Layanan", href: "/services" },
+                { name: "Kontak", href: "/#contact" },
               ].map((link) => (
                 <li key={link.name}>
                   <a
@@ -46,7 +46,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white">Connect</h3>
+            <h3 className="text-lg font-semibold text-white">Terhubung</h3>
             <div className="flex space-x-4">
               {[
                 {
@@ -55,7 +55,7 @@ const Footer = () => {
                   icon: "M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
                 },
                 {
-                  name: "Phone",
+                  name: "Telepon",
                   url: "tel:+6285693922994",
                   icon: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z",
                 },
@@ -85,7 +85,7 @@ const Footer = () => {
             </div>
             <div className="text-gray-400 text-sm">
               <p>Email: araysama10@gmail.com</p>
-              <p>Location: Depok City, West Java, Indonesia</p>
+              <p>Lokasi: Kota Depok, Jawa Barat, Indonesia</p>
             </div>
           </div>
         </div>
@@ -94,7 +94,6 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
             © {new Date().getFullYear()} Ahmad Bushairi. All rights reserved.
-            Built with ❤️ using Next.js & Tailwind CSS
           </p>
         </div>
       </div>

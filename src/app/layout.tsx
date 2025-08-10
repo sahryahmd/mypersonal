@@ -15,29 +15,44 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Ahmad Bushairi - IT & Frontend Developer | Personal Website",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  title: "Ahmad Bushairi - IT Support & Frontend Developer | Portofolio & Jasa",
   description:
-    "Ahmad Bushairi adalah IT & Frontend Developer. Berpengalaman dalam instalasi jaringan, troubleshooting, maintenance hardware/software, POS systems, dan pengembangan website modern.",
+    "Layanan profesional IT Support (onsite/remote), pembuatan website modern, dan dukungan infrastruktur. 13+ tahun pengalaman. Konsultasi gratis & harga transparan.",
   keywords: [
     "Ahmad Bushairi",
-    "IT Support",
-    "Network Installation",
-    "POS Systems",
-    "Network Management",
-    "Hardware Maintenance",
-    "Software Troubleshooting",
+    "Jasa IT Support",
+    "Layanan IT",
+    "Pembuatan Website",
+    "Web Development",
+    "Remote Support",
+    "Maintenance Jaringan",
+    "Troubleshooting",
     "Mikrotik",
-    "Windows OS",
-    "Frontend Developer",
-    "React",
+    "Windows",
     "Next.js",
     "Tailwind CSS",
     "TypeScript",
-    "JavaScript",
-    "Personal Website",
+    "Portofolio",
+    "Depok",
+    "Indonesia",
   ],
   authors: [{ name: "Ahmad Bushairi" }],
-  // viewport: "width=device-width, initial-scale=1", // Hapus dari sini
+  openGraph: {
+    title: "Ahmad Bushairi - IT Support & Frontend Developer | Portofolio & Jasa",
+    description:
+      "Layanan profesional IT Support (onsite/remote), pembuatan website modern, dan dukungan infrastruktur. 13+ tahun pengalaman.",
+    images: ["/personal.png"],
+    locale: "id_ID",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ahmad Bushairi - IT Support & Frontend Developer | Portofolio & Jasa",
+    description:
+      "Layanan profesional IT Support (onsite/remote), pembuatan website modern, dan dukungan infrastruktur.",
+    images: ["/personal.png"],
+  },
 }
 
 export const viewport = {
@@ -51,7 +66,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="id" className="dark">
       <body
         className={`${inter.variable} ${poppins.variable} antialiased bg-gray-900 text-white`}
       >

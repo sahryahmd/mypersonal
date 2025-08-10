@@ -29,82 +29,82 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      category: "Network & Infrastructure",
+      category: "Jaringan & Infrastruktur",
       skills: [
         {
-          name: "Mikrotik Configuration",
+          name: "Konfigurasi Mikrotik",
           level: 95,
           color: "from-blue-500 to-cyan-500",
         },
         {
-          name: "Network Switching",
+          name: "Switching Jaringan",
           level: 90,
           color: "from-black to-gray-800",
         },
-        { name: "PABX Systems", level: 88, color: "from-blue-600 to-blue-800" },
+        { name: "Sistem PABX", level: 88, color: "from-blue-600 to-blue-800" },
         {
-          name: "VOIP Installation",
+          name: "Instalasi VOIP",
           level: 92,
           color: "from-cyan-500 to-blue-500",
         },
         {
-          name: "Network Monitoring",
+          name: "Monitoring Jaringan",
           level: 85,
           color: "from-orange-500 to-red-500",
         },
       ],
     },
     {
-      category: "Hardware & Systems",
+      category: "Perangkat Keras & Sistem",
       skills: [
         {
-          name: "POS Systems",
+          name: "Sistem POS",
           level: 90,
           color: "from-green-500 to-green-700",
         },
         {
-          name: "Windows OS Management",
+          name: "Manajemen Windows OS",
           level: 95,
           color: "from-gray-600 to-gray-800",
         },
         {
-          name: "Printer Maintenance",
+          name: "Perawatan Printer",
           level: 88,
           color: "from-blue-600 to-indigo-600",
         },
         {
-          name: "Fingerprint Systems",
+          name: "Sistem Fingerprint",
           level: 85,
           color: "from-green-600 to-green-800",
         },
         {
-          name: "Interactive Whiteboards",
+          name: "Papan Tulis Interaktif",
           level: 80,
           color: "from-purple-500 to-pink-500",
         },
       ],
     },
     {
-      category: "Software & Development",
+      category: "Perangkat Lunak & Website",
       skills: [
         {
-          name: "General IT Support",
+          name: "Bantuan IT Sehari-hari",
           level: 95,
           color: "from-orange-600 to-red-600",
         },
         {
-          name: "Graphic Design",
+          name: "Desain Grafis",
           level: 75,
           color: "from-blue-500 to-indigo-600",
         },
         {
-          name: "Frontend Development",
+          name: "Pembuatan Tampilan Website (Frontend)",
           level: 70,
           color: "from-yellow-500 to-orange-500",
         },
-        { name: "Next.js", level: 65, color: "from-purple-500 to-pink-500" },
+        { name: "Next.js (Framework Website)", level: 65, color: "from-purple-500 to-pink-500" },
         {
-          name: "System Troubleshooting",
+          name: "Perbaikan Masalah Sistem",
           level: 92,
           color: "from-green-500 to-teal-500",
         },
@@ -123,10 +123,10 @@ const Skills = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="gradient-text">Skills & Expertise</span>
+              <span className="gradient-text">Keahlian & Spesialisasi</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Technologies and tools I use to bring ideas to life
+              Teknologi dan alat yang saya gunakan untuk mewujudkan solusi yang andal dan efektif
             </p>
           </div>
 

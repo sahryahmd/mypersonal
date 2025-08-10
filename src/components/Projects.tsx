@@ -35,7 +35,7 @@ const Projects = () => {
       id: 7,
       title: "Spin City Bowling Website",
       description:
-        "A modern, responsive company profile website for Spin City Bowling, built with Next.js and Tailwind CSS. Features booking information, gallery, and contact form.",
+        "Website profil perusahaan modern dan responsif untuk Spin City Bowling, dibangun dengan Next.js dan Tailwind CSS. Memuat informasi pemesanan, galeri, dan formulir kontak.",
       image: "/spin.png",
       category: "frontend",
       technologies: ["Next.js", "Tailwind CSS", "React", "Vercel"],
@@ -47,7 +47,7 @@ const Projects = () => {
       id: 8,
       title: "Personal Portfolio Website",
       description:
-        "A personal portfolio website to showcase my skills, experience, and projects as a frontend developer. Built with Next.js and styled using Tailwind CSS.",
+        "Website portofolio pribadi untuk menampilkan keahlian, pengalaman, dan proyek saya sebagai frontend developer. Dibangun dengan Next.js dan bergaya menggunakan Tailwind CSS.",
       image: "/personal.png",
       category: "frontend",
       technologies: ["Next.js", "Tailwind CSS", "React"],
@@ -57,10 +57,10 @@ const Projects = () => {
     },
     {
       id: 9,
-      title: "Company Landing Page Redesign",
+      title: "Redesain Landing Page Perusahaan",
       description:
-        "Redesigned a corporate landing page for improved user experience and mobile responsiveness. Implemented modern UI/UX best practices.",
-      image: "/api/placeholder/400/250",
+        "Redesain landing page perusahaan untuk meningkatkan pengalaman pengguna dan responsivitas mobile. Menerapkan praktik terbaik UI/UX modern.",
+      image: "/personal.png",
       category: "frontend",
       technologies: ["React", "Tailwind CSS", "UI/UX"],
       liveUrl: "#",
@@ -70,9 +70,9 @@ const Projects = () => {
     // Sisanya project lain
     {
       id: 1,
-      title: "POS Raptor System Installation",
+      title: "Instalasi Sistem POS Raptor",
       description:
-        "Successfully installed and configured POS Raptor systems with Epson thermal printers for cashier operations, including QBilliard and Kitchen POS Raptor applications.",
+        "Instalasi dan konfigurasi sistem POS Raptor dengan printer thermal Epson untuk operasional kasir, termasuk aplikasi QBilliard dan Kitchen POS Raptor.",
       image: "/pos.jpg",
       category: "systems",
       technologies: [
@@ -88,9 +88,9 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Thamrin Nine Network Infrastructure",
+      title: "Infrastruktur Jaringan Thamrin Nine",
       description:
-        "Designed and installed comprehensive internet and VOIP-based telephone networks for multiple tenants at Thamrin Nine Complex, ensuring reliable connectivity and service quality.",
+        "Perancangan dan pemasangan jaringan internet serta telepon berbasis VOIP untuk banyak tenant di Thamrin Nine Complex, memastikan koneksi andal dan kualitas layanan.",
       image: "/thamrinnine.jpg",
       category: "networking",
       technologies: [
@@ -106,9 +106,9 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "QUBICA AMF Bowling System",
+      title: "Sistem Bowling QUBICA AMF",
       description:
-        "Maintained and ensured operational readiness of QUBICA AMF Conqueror bowling cashier system, providing technical support and system optimization.",
+        "Pemeliharaan dan memastikan kesiapan operasional sistem kasir bowling QUBICA AMF Conqueror, termasuk dukungan teknis dan optimasi sistem.",
       image: "/amf.jpg",
       category: "systems",
       technologies: [
@@ -123,9 +123,9 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "Fingerprint Attendance System",
+      title: "Sistem Absensi Fingerprint",
       description:
-        "Installed and configured fingerprint attendance systems with comprehensive user training and ongoing maintenance support.",
+        "Instalasi dan konfigurasi sistem absensi fingerprint disertai pelatihan pengguna serta dukungan pemeliharaan berkelanjutan.",
       image: "/att.webp",
       category: "hardware",
       technologies: [
@@ -140,9 +140,9 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: "Interactive Whiteboard Setup",
+      title: "Pemasangan Papan Tulis Interaktif",
       description:
-        "Installed Promethean interactive whiteboards with detailed usage demonstrations and technical support for educational institutions.",
+        "Pemasangan papan tulis interaktif Promethean dengan demonstrasi penggunaan dan dukungan teknis untuk institusi pendidikan.",
       image: "/promethean.png",
       category: "hardware",
       technologies: [
@@ -157,9 +157,9 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: "Network Monitoring & Troubleshooting",
+      title: "Monitoring & Pemecahan Masalah Jaringan",
       description:
-        "Implemented comprehensive network monitoring using Cacti and The Dude, with rapid response troubleshooting for service interruptions.",
+        "Implementasi monitoring jaringan komprehensif menggunakan Cacti dan The Dude, dengan respons cepat untuk penanganan gangguan layanan.",
       image: "/network.jpg",
       category: "networking",
       technologies: [
@@ -176,10 +176,10 @@ const Projects = () => {
   ]
 
   const filters = [
-    { id: "all", label: "All Projects" },
-    { id: "networking", label: "Networking" },
-    { id: "systems", label: "Systems" },
-    { id: "hardware", label: "Hardware" },
+    { id: "all", label: "Semua Proyek" },
+    { id: "networking", label: "Jaringan" },
+    { id: "systems", label: "Sistem" },
+    { id: "hardware", label: "Perangkat Keras" },
     { id: "frontend", label: "Frontend" },
   ]
 
@@ -199,10 +199,10 @@ const Projects = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="gradient-text">Featured Projects</span>
+              <span className="gradient-text">Proyek Unggulan</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              A showcase of my recent work and creative solutions
+              Kumpulan karya terbaru dan solusi yang saya bangun
             </p>
           </div>
 
@@ -260,7 +260,7 @@ const Projects = () => {
                   </div>
                   {project.featured && (
                     <div className="absolute top-4 right-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                      Featured
+                      Unggulan
                     </div>
                   )}
                 </div>
@@ -294,7 +294,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       className="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-center py-2 px-4 rounded-lg text-sm font-medium hover:from-indigo-700 hover:to-purple-700 transition-all duration-200"
                     >
-                      Live Demo
+                      Lihat Demo
                     </a>
                     <a
                       href={project.githubUrl}
@@ -302,7 +302,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       className="flex-1 border border-gray-600 text-gray-300 text-center py-2 px-4 rounded-lg text-sm font-medium hover:border-indigo-500 hover:text-white transition-all duration-200"
                     >
-                      GitHub
+                      Lihat Kode
                     </a>
                   </div>
                 </div>
@@ -318,7 +318,7 @@ const Projects = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 border-2 border-indigo-600 text-indigo-400 font-semibold rounded-lg hover:bg-indigo-600 hover:text-white transition-all duration-300 hover-lift"
             >
-              View More on GitHub
+              Lihat Lebih Banyak di GitHub
               <svg
                 className="w-5 h-5 ml-2"
                 fill="none"

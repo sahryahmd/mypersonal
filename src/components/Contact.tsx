@@ -38,11 +38,11 @@ const Contact = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="gradient-text">Get In Touch</span>
+              <span className="gradient-text">Hubungi Saya</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Let&apos;s work together on your next project. I&apos;m always
-              open to discussing new opportunities.
+              Ceritakan tantangan IT atau ide website Anda. Saya akan bantu usulkan
+              solusi dan estimasi biaya tanpa komitmen. Respon cepat dan ramah.
             </p>
           </div>
 
@@ -51,12 +51,11 @@ const Contact = () => {
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-semibold text-white mb-6">
-                  Let&apos;s Connect
+                  Ayo Terhubung
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-8">
-                  I&apos;m always interested in hearing about new projects and
-                  opportunities. Whether you have a question or just want to say
-                  hi, feel free to reach out!
+                  Saya selalu antusias mendengar proyek dan peluang baru. Punya pertanyaan
+                  atau ingin konsultasi? Silakan hubungi saya.
                 </p>
               </div>
 
@@ -80,9 +79,7 @@ const Contact = () => {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-white">
-                        Email
-                      </h4>
+                      <h4 className="text-lg font-semibold text-white">Email</h4>
                       <a
                         href="mailto:araysama10@gmail.com"
                         className="text-gray-300 hover:text-indigo-400 transition-colors duration-200"
@@ -117,12 +114,8 @@ const Contact = () => {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-white">
-                        Location
-                      </h4>
-                      <p className="text-gray-300">
-                        Depok City, West Java, Indonesia
-                      </p>
+                      <h4 className="text-lg font-semibold text-white">Lokasi</h4>
+                      <p className="text-gray-300">Kota Depok, Jawa Barat, Indonesia</p>
                     </div>
                   </div>
                 </div>
@@ -145,9 +138,7 @@ const Contact = () => {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-white">
-                        Phone
-                      </h4>
+                      <h4 className="text-lg font-semibold text-white">Telepon</h4>
                       <a
                         href="tel:+6285693922994"
                         className="text-gray-300 hover:text-indigo-400 transition-colors duration-200"
@@ -162,37 +153,35 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div className="glass p-8 rounded-2xl">
-              <h3 className="text-2xl font-semibold text-white mb-6">
-                Send Message
-              </h3>
+              <h3 className="text-2xl font-semibold text-white mb-6">Kirim Pesan</h3>
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <input
                     type="text"
-                    placeholder="Your name"
+                    placeholder="Nama Anda"
                     className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-indigo-500 transition-colors duration-200"
                   />
                   <input
                     type="email"
-                    placeholder="your@email.com"
+                    placeholder="email@anda.com"
                     className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-indigo-500 transition-colors duration-200"
                   />
                 </div>
                 <input
                   type="text"
-                  placeholder="Subject"
+                  placeholder="Subjek"
                   className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-indigo-500 transition-colors duration-200"
                 />
                 <textarea
                   rows={6}
-                  placeholder="Tell me about your project..."
+                  placeholder="Ceritakan kebutuhan proyek Anda..."
                   className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-indigo-500 transition-colors duration-200 resize-none"
                 />
                 <button
                   type="submit"
                   className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 hover-lift"
                 >
-                  Send Message
+                  Kirim Pesan
                 </button>
               </form>
             </div>
