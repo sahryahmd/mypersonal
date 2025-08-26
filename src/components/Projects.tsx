@@ -60,7 +60,7 @@ const Projects = () => {
       title: "Landing Page Medifit",
       description:
         "Medifit adalah landing page e-commerce kesehatan yang saya slicing dari Figma ke Next.js + TailwindCSS. Fokus pada performa, aksesibilitas, dan micro-interaction: hover CTA, grid kategori dengan ikon, highlight promo, serta testimonial interaktif. Hasil akhir 90% pixel-perfect, responsif, dan siap diintegrasikan ke fitur cart/checkout.",
-      image: "/medifit.png",
+      image: "/medifitt.png",
       category: "frontend",
       technologies: ["Next.js", "Tailwind CSS", "UI/UX"],
       liveUrl: "https://medifit-git-master-sahryahmds-projects.vercel.app/",
