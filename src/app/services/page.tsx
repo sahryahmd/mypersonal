@@ -61,16 +61,16 @@ export default function ServicesPage() {
       id: "it-support",
       title: "IT Support Onsite",
       icon: Wrench,
-      price: "Rp 500.000 / visit",
+      price: "Rp 200.000 / visit",
       accent: "from-indigo-600 to-purple-600",
       cta: wa(
         "Halo, saya tertarik dengan paket IT Support Onsite. Mohon info lebih lanjut."
       ),
       features: [
-        "Instalasi & konfigurasi perangkat",
+        "Instalasi & konfigurasi hardware/software",
         "Troubleshooting jaringan & printer",
         "Setup POS, OS, driver, dan update",
-        "Dokumentasi singkat & rekomendasi",
+        "Dokumentasi singkat & training dasar",
       ],
       note: "Kunjungan Jabodetabek. Biaya di luar kota menyesuaikan.",
     },
@@ -78,7 +78,7 @@ export default function ServicesPage() {
       id: "web-dev",
       title: "Web Development",
       icon: Code2,
-      price: "Mulai Rp 3.500.000",
+      price: "Mulai Rp 1.000.000",
       accent: "from-fuchsia-600 to-pink-600",
       cta: wa(
         "Halo, saya ingin membuat website perusahaan/portfolio. Mohon konsultasi paket Web Development."
@@ -95,7 +95,7 @@ export default function ServicesPage() {
       id: "remote-support",
       title: "Remote Support",
       icon: Headphones,
-      price: "Rp 150.000 / jam",
+      price: "Rp 50.000 / jam",
       accent: "from-blue-600 to-cyan-600",
       cta: wa(
         "Halo, saya membutuhkan Remote Support untuk troubleshooting. Kapan tersedia?"
@@ -112,9 +112,9 @@ export default function ServicesPage() {
 
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
   const priceMap: Record<string, number> = {
-    "it-support": 500000,
-    "web-dev": 3500000,
-    "remote-support": 150000,
+    "it-support": 200000,
+    "web-dev": 1000000,
+    "remote-support": 50000,
   }
 
   const servicesLd = {
