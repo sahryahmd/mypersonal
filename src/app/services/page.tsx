@@ -1,6 +1,6 @@
-import Link from "next/link"
-import Header from "@/components/Header"
-import Footer from "@/components/Footer"
+import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import {
   Code2,
   Wrench,
@@ -11,9 +11,9 @@ import {
   Award,
   Wallet,
   MessageSquare,
-} from "lucide-react"
-import type { Metadata } from "next"
-import Script from "next/script"
+} from "lucide-react";
+import type { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title:
@@ -39,7 +39,14 @@ export const metadata: Metadata = {
     description:
       "Paket layanan profesional: IT Support onsite/remote, Web Development modern, dan dukungan teknis cepat.",
     url: "/services",
-    images: ["logo.png"],
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Ahmad Bushairi - Jasa & Paket Layanan",
+      },
+    ],
     type: "website",
   },
   twitter: {
@@ -50,11 +57,11 @@ export const metadata: Metadata = {
       "Paket layanan profesional: IT Support onsite/remote, Web Development modern, dan dukungan teknis cepat.",
     images: ["/logo.png"],
   },
-}
+};
 
 export default function ServicesPage() {
   const wa = (msg: string) =>
-    `https://wa.me/6285693922994?text=${encodeURIComponent(msg)}`
+    `https://wa.me/6285693922994?text=${encodeURIComponent(msg)}`;
 
   const cards = [
     {
@@ -108,14 +115,15 @@ export default function ServicesPage() {
       ],
       note: "Minimal 1 jam. Penambahan waktu pro-rata.",
     },
-  ] as const
+  ] as const;
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+  const baseUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || "https://ahmadbushairi.web.id";
   const priceMap: Record<string, number> = {
     "it-support": 200000,
     "web-dev": 1000000,
     "remote-support": 50000,
-  }
+  };
 
   const servicesLd = {
     "@context": "https://schema.org",
@@ -137,7 +145,7 @@ export default function ServicesPage() {
         availability: "https://schema.org/InStock",
       },
     })),
-  }
+  };
 
   const breadcrumbsLd = {
     "@context": "https://schema.org",
@@ -156,7 +164,7 @@ export default function ServicesPage() {
         item: `${baseUrl}/services`,
       },
     ],
-  }
+  };
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
@@ -178,13 +186,28 @@ export default function ServicesPage() {
       <section className="relative overflow-hidden py-24">
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-purple-900/20 to-pink-900/20" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
+          {/* Breadcrumbs UI */}
+          <nav aria-label="Breadcrumb" className="mb-4 text-sm text-gray-400">
+            <ol className="flex justify-center gap-2">
+              <li>
+                <Link href="/" className="hover:text-white">
+                  Beranda
+                </Link>
+              </li>
+              <li aria-hidden="true">/</li>
+              <li className="text-white" aria-current="page">
+                Layanan
+              </li>
+            </ol>
+          </nav>
+
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="gradient-text">Jasa & Paket Layanan</span>
           </h1>
-          <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-            Solusi profesional untuk kebutuhan IT Support, pembuatan website
-            modern, dan dukungan remote dengan respons cepat serta harga
-            transparan.
+          <p className="text-gray-300 max-w-3xl mx-auto text-lg">
+            Jasa IT Support Onsite/Remote, pembuatan website modern berbasis
+            Next.js, serta dukungan teknis cepat dan transparan untuk bisnis dan
+            personal.
           </p>
           <div
             className="mt-8 flex flex-col sm:flex-row gap-4 justify-center animate-fade-in"
@@ -205,6 +228,15 @@ export default function ServicesPage() {
               Hubungi via Form
             </Link>
           </div>
+          <div className="mt-4 text-sm text-gray-400">
+            <Link href="/projects" className="underline hover:text-white">
+              Lihat portofolio proyek
+            </Link>
+            <span className="mx-2">•</span>
+            <Link href="/#about" className="underline hover:text-white">
+              Tentang saya
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -222,7 +254,7 @@ export default function ServicesPage() {
                 cta,
                 features,
                 note,
-              } = card
+              } = card;
               return (
                 <div
                   key={id}
@@ -259,13 +291,14 @@ export default function ServicesPage() {
                       <Link
                         href="/#contact"
                         className="w-full text-center border border-gray-600 py-2 rounded-lg font-medium text-gray-300 hover:border-indigo-500 hover:text-white transition-all"
+                        aria-label={`Diskusikan kebutuhan untuk ${title}`}
                       >
                         Diskusikan Kebutuhan
                       </Link>
                     </div>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
 
@@ -380,5 +413,5 @@ export default function ServicesPage() {
 
       <Footer />
     </div>
-  )
+  );
 }
