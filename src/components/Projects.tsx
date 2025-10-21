@@ -1,33 +1,33 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import Image from "next/image"
+import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Projects = () => {
-  const [isVisible, setIsVisible] = useState(false)
-  const [activeFilter, setActiveFilter] = useState("all")
+  const [isVisible, setIsVisible] = useState(false);
+  const [activeFilter, setActiveFilter] = useState("all");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true)
+          setIsVisible(true);
         }
       },
       { threshold: 0.1 }
-    )
+    );
 
-    const element = document.getElementById("projects")
+    const element = document.getElementById("projects");
     if (element) {
-      observer.observe(element)
+      observer.observe(element);
     }
 
     return () => {
       if (element) {
-        observer.unobserve(element)
+        observer.unobserve(element);
       }
-    }
-  }, [])
+    };
+  }, []);
 
   const projects = [
     // Frontend projects dulu
@@ -40,7 +40,7 @@ const Projects = () => {
       category: "frontend",
       technologies: ["Next.js", "Tailwind CSS", "React", "Vercel"],
       liveUrl: "https://www.spincityagora.my.id",
-      githubUrl: "#",
+      githubUrl: "https://github.com/sahryahmd/spin",
       featured: true,
     },
     {
@@ -51,8 +51,8 @@ const Projects = () => {
       image: "/personal.png",
       category: "frontend",
       technologies: ["Next.js", "Tailwind CSS", "React"],
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://www.ahmadbushairi.web.id/",
+      githubUrl: "https://github.com/sahryahmd/mypersonal",
       featured: true,
     },
     {
@@ -82,8 +82,7 @@ const Projects = () => {
         "Kitchen POS",
         "System Configuration",
       ],
-      liveUrl: "#",
-      githubUrl: "#",
+
       featured: true,
     },
     {
@@ -100,8 +99,7 @@ const Projects = () => {
         "The Dude",
         "Service Activation",
       ],
-      liveUrl: "#",
-      githubUrl: "#",
+
       featured: true,
     },
     {
@@ -117,8 +115,7 @@ const Projects = () => {
         "System Maintenance",
         "Technical Support",
       ],
-      liveUrl: "#",
-      githubUrl: "#",
+
       featured: true,
     },
     {
@@ -134,8 +131,7 @@ const Projects = () => {
         "System Installation",
         "Maintenance",
       ],
-      liveUrl: "#",
-      githubUrl: "#",
+
       featured: false,
     },
     {
@@ -151,8 +147,7 @@ const Projects = () => {
         "Educational Technology",
         "User Training",
       ],
-      liveUrl: "#",
-      githubUrl: "#",
+
       featured: false,
     },
     {
@@ -169,11 +164,10 @@ const Projects = () => {
         "Troubleshooting",
         "Service Support",
       ],
-      liveUrl: "#",
-      githubUrl: "#",
+
       featured: true,
     },
-  ]
+  ];
 
   const filters = [
     { id: "all", label: "Semua Proyek" },
@@ -181,12 +175,12 @@ const Projects = () => {
     { id: "systems", label: "Sistem" },
     { id: "hardware", label: "Perangkat Keras" },
     { id: "frontend", label: "Frontend" },
-  ]
+  ];
 
   const filteredProjects =
     activeFilter === "all"
       ? projects
-      : projects.filter((project) => project.category === activeFilter)
+      : projects.filter((project) => project.category === activeFilter);
 
   return (
     <section id="projects" className="py-20 bg-gray-900/50">
@@ -313,7 +307,7 @@ const Projects = () => {
           {/* View More Button */}
           <div className="text-center mt-12">
             <a
-              href="https://github.com"
+              href="https://github.com/sahryahmd"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 border-2 border-indigo-600 text-indigo-400 font-semibold rounded-lg hover:bg-indigo-600 hover:text-white transition-all duration-300 hover-lift"
@@ -337,7 +331,7 @@ const Projects = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

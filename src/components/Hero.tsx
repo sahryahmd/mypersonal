@@ -58,12 +58,12 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed animate-fade-in">
-            Saya membantu bisnis dan individu memiliki sistem IT yang stabil
-            serta website modern yang cepat, aman, dan mudah dikelola. Tujuan
-            saya sederhana: operasional tanpa gangguan, pengalaman pengguna yang
-            mulus, dan proses kerja yang jelas dari awal hingga selesai. Mulai
-            dengan konsultasi gratis—tanpa komitmen—untuk mendapatkan solusi
-            paling efektif sesuai kebutuhan Anda.
+            Saya Ahmad Bushairi, seorang IT Support dan Website Developer yang
+            siap membantu Anda memberikan solusi digital yang stabil, cepat, dan
+            profesional. Mulai dari jaringan kantor, maintenance sistem,
+            hardware, software solution hingga website company profile atau
+            landing page modern — semua dirancang agar bisnis Anda siap bersaing
+            di era digital.
           </p>
 
           {/* CTA Buttons */}
