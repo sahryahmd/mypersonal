@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import Link from "next/link"
-import Image from "next/image"
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setIsVisible(true)
-  }, [])
+    setIsVisible(true);
+  }, []);
 
   return (
     <section
@@ -53,7 +53,7 @@ const Hero = () => {
 
           {/* Title */}
           <h2 className="text-2xl md:text-3xl lg:text-4xl text-gray-300 mb-8 animate-slide-in-right">
-            Spesialis IT Support & Frontend Developer
+            IT Support & Frontend Developer
           </h2>
 
           {/* Description */}
@@ -148,7 +148,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
