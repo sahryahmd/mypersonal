@@ -65,7 +65,7 @@ const Projects = () => {
       technologies: ["Next.js", "Tailwind CSS", "UI/UX"],
       liveUrl: "https://medifit-nu.vercel.app/",
       githubUrl: "https://github.com/sahryahmd/medifit",
-      featured: false,
+      featured: true,
     },
     // Sisanya project lain
     {
