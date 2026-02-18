@@ -63,7 +63,7 @@ const Projects = () => {
       image: "/medifitt.png",
       category: "frontend",
       technologies: ["Next.js", "Tailwind CSS", "UI/UX"],
-      liveUrl: "https://medifit-git-master-sahryahmds-projects.vercel.app/",
+      liveUrl: "https://medifit-nu.vercel.app/",
       githubUrl: "https://github.com/sahryahmd/medifit",
       featured: false,
     },
